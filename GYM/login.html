@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Login</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel='stylesheet' href='css/login.css'>
+</head>
+
+<body>
+
+    <section>       
+        <div class="form-box">
+            <div class="form">
+                <form onsubmit="return validarCredenciales()">
+                    <h2>Ingresar</h2>
+                    <div class="inputbox"> <ion-icon name="#"></ion-icon> <input type="email" id="correo" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputbox"> <ion-icon name="#"></ion-icon> <input type="password" id="contrasena" required>
+                        <label>Password</label> </div>
+                    <div class="forget"> <label><input type="checkbox">Recordarme</label> 
+                    </div> 
+                    <button type="submit">Ingresar</button>
+                    <div class="registro">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        function validarCredenciales() {
+            
+            window.location.href = "index.html";
+            return false; 
+        }
+    </script>
+
+</body>
+
+</html>

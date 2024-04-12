@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+  }
+  
+  body {
+    height: inherit;
+    font-family: sans-serif;
+    background-color: transparent;
+    overflow-x: hidden;
+  }
+  .nav-bar {
+    height: 15%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 6rem;
+  }
+  .first--set--icons,
+  .second--set--icons {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .nav-list li a,
+  .ion {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+  }
+  .nav-list li a::after {
+    transition: 0.3s ease;
+    content: "";
+    background-color: red;
+    height: 0.2rem;
+    left: 0;
+    bottom: -0.6rem;
+    width: 0;
+    position: absolute;
+  }
+  
+  .nav-list li a:hover::after {
+    width: 100%;
+  }
+
+
+
+  
+ .seccion-principal{
+    background-image: url("../img/principal.jpg");
+    position: relative;
+    min-height: 90%;
+    background-size: cover;
+    background-position: top;
+    top: -2.6rem;
+  }
+  
+  .fit-red {
+    color: red;
+  }
+  
+  .gym {
+    color: white;
+  }
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .logo-box img {
+    width: 5.2rem;
+    height: auto;
+  }
+  
+  .logo-text {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  .second--set--icons li {
+    cursor: pointer;
+  }
+  
+  .texto-principal{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .texto-principal h1 {
+    font-size: 8rem;
+    color: red;
+    line-height: 0.8;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .texto-principal h2 {
+    text-transform: uppercase;
+    font-size: 3.9rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+  }
+  
+  .texto-principal p {
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+  }
+  
+  .texto-principal a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 2rem 4rem;
+    background-color: #ff0000;
+    transition: all 0.3s ease;
+  }
+  
+  .texto-principala:hover {
+    background-color: #ff4d4d;
+  }
+  
+  .nosotros {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    transition: transform 1s, opacity 1s;
+  }
+  
+  .nosotros h1 {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+  }
+  
+  .nosotros p {
+    color: #5f5f5f;
+    font-size: 1.4rem;
+    width: 25%;
+  }
+  
+  .list-section {
+    height: 25vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 12rem;
+    margin-bottom: 4.2rem;
+    transition: transform 1s, opacity 1s;
+  }
+  .list-section h1 {
+    position: absolute;
+    color: #e0e0e0;
+    font-size: 12rem;
+    top: -10rem;
+    z-index: -1;
+  }
+  
+  .list-section h2 {
+    text-transform: uppercase;
+    color: #414141;
+    margin-bottom: 1rem;
+  }
+  
+  .list-section p {
+    color: #5f5f5f;
+    font-size: 1.4rem;
+    width: 20rem;
+  }
+  
+  .galeria {
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+  }
+  
+  .primera-parte-galeria {
+    background-image: url("../img/foto1.png");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .segunda-parte-galeria {
+    background-image: url("../img/foto2.png");
+    background-size: cover;
+    background-position: top;
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  .tercera-parte-galeria {
+    background-image: url("../img/foto3.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  .cuarta-parte-galeria {
+    background-image: url("../img/foto4.png");
+    background-size: cover;
+    background-position: top;
+    width: 50vw;
+    height: 50vh;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .flex h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+  .flex p {
+    font-size: 1.6rem;
+    width: 40%;
+    text-align: center;
+    margin-block: 2rem;
+  }
+  
+  .flex a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-block: 0.8rem;
+    padding-inline: 2.4rem;
+    border: 0.2rem solid white;
+    transition: all 0.3s ease;
+  }
+  
+  .flex a:hover {
+    background-color: red;
+    border: 0.2rem solid red;
+  }
+  
+  .statistic-section {
+    padding-block: 16rem;
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    transition: opacity 1.5s;
+  }
+  
+  .statistic-section .stat {
+    text-align: center;
+  }
+  
+  
+  .about-stat {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1.6rem;
+  }
+  
+ .seccion-entrenadores {
+    padding-bottom: 12rem;
+  }
+  .entrenadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .entrenadores h1 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+  
+  .parte-entrenadores {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.2rem;
+    justify-content: center;
+    gap: 8rem;
+  }
+  
+  .parte-entrenadores img {
+    height: 24rem;
+    width: 20rem;
+  }
+  
+  .trainer-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .trainer-name {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+  
+  .trainer-title {
+    color: #a7a7a7;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-bottom: 1.6rem;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 8rem;
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: color 0.25s ease;
+  }
+  
+  .icons a:hover {
+    color: #e0000c;
+  }
+  
+  .trainer-button-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .parte-entrenadores-btn:is(:hover, :active) {
+    background-color: #e94d55;
+  }
+
+  
+  
+  /* membresias */
+
+  .membership-section {
+    height: 110vh;
+    background-color: black;
+    background-image: url("../img/membership-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .membership-title {
+    position: relative;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .membership-title h1 {
+    color: white;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+  
+  .figuras {
+    height: inherit;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .cifra-membresia {
+    padding-block: 6rem;
+    padding-inline: 6rem;
+    background-color: rgb(0, 0, 0, 0.75);
+    transition: 0.25 ease;
+    transition: all 0.2s linear;
+  }
+  
+  .cifra-membresia-title {
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+  }
+  
+  .lista-membresia {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .opcion-membresias {
+    display: flex;
+    gap: 1rem;
+  }
+  .opcion-membresias ion-icon {
+    font-size: 1.8rem;
+    color: red;
+  }
+  
+  .opcion-membresias li {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  
+  .price-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: red;
+    margin-block: 2rem;
+  }
+  
+  .price-tag h1 {
+    font-size: 4.4rem;
+  }
+  
+  .price-tag > p {
+    font-size: 2.2rem;
+  }
+  
+  .price-tag p:first-child {
+    position: relative;
+    top: -0.6rem;
+    font-weight: 100;
+  }
+  
+  .price-tag p:last-child {
+    position: relative;
+    top: 0.6rem;
+    font-style: italic;
+  }
+  
+  .cifra-membresia button {
+    border: none;
+    background-color: #e0000c;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.6rem 2.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  .cifra-membresia:is(:hover, :active) {
+    background-color: #e0000c;
+    transform: scale(1.05);
+  }
+  .cifra-membresia:hover .price-tag {
+    color: white;
+  }
+  
+  .cifra-membresia:hover ion-icon {
+    color: white;
+  }
+  .cifra-membresia:hover button {
+    background-color: black;
+  }
+  
+  
+
+  
+  /* fotter */
+
+  .parte1-footer {
+    background-image: url("../img/footer-img.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-block: 6rem;
+    gap: 8rem;
+  }
+  
+  .footer-contacto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-contacto-title {
+    display: flex;
+  }
+  .footer-contacto-title h1 {
+    text-transform: uppercase;
+    color: #e0000c;
+  }
+  .footer-contacto-title h1:last-child {
+    color: white;
+  }
+  .footer-contacto p {
+    color: #aaaaaa;
+    font-size: 1.4rem;
+    margin-block: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer-bio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-icon {
+    font-size: 1.8rem;
+    color: #e0000c;
+    font-weight: bold;
+  }
+  
+  
+  .footer-blog {
+    color: #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-blog h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .footer-blog p:not(p:last-of-type) {
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .footer-blog p:not(p:last-of-type):hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+  
+  .footer-blog p:last-of-type {
+    position: relative;
+  }
+  .footer-blog p:last-of-type::after {
+    content: "";
+    height: 0.5px;
+    width: 100%;
+    background-color: #aaaaaa;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+  }
+  
+  .footer-blog p {
+    font-size: 1.2rem;
+  }
+  
+  .noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .noticias h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .noticias p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    line-height: 1.6;
+  }
+  
+
+  .parte-entrenadores-btn a,
+  .cifra-membresia button a,
+  .blog-footer button a,
+  .footer-form button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  

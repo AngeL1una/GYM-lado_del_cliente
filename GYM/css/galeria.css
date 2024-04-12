@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  html {
+    font-family: sans-serif;
+    height: 100%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background: url(../img/principal.jpg);
+    
+  }
+  
+  body {
+    height: inherit;
+    font-family: sans-serif;
+    background-color: transparent;
+    overflow-x: hidden;
+  }
+  .nav-bar {
+    height: 15%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 6rem;
+  }
+  .first--set--icons,
+  .second--set--icons {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .nav-list li a,
+  .ion {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+  }
+  .nav-list li a::after {
+    transition: 0.3s ease;
+    content: "";
+    background-color: red;
+    height: 0.2rem;
+    left: 0;
+    bottom: -0.6rem;
+    width: 0;
+    position: absolute;
+  }
+  
+  .nav-list li a:hover::after {
+    width: 100%;
+  }
+  
+ .seccion-principal{
+    background-image: url("../img/principal.jpg");
+    position: relative;
+    min-height: 90%;
+    background-size: cover;
+    background-position: top;
+    top: -2.6rem;
+  }
+  
+  .fit-red {
+    color: red;
+  }
+  
+  .gym {
+    color: white;
+  }
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .logo-box img {
+    width: 5.2rem;
+    height: auto;
+  }
+  
+  .logo-text {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  .second--set--icons li {
+    cursor: pointer;
+  }
+  
+  .texto-principal{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .texto-principal h1 {
+    font-size: 8rem;
+    color: red;
+    line-height: 0.8;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .texto-principal h2 {
+    text-transform: uppercase;
+    font-size: 3.9rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+  }
+  
+  .texto-principal p {
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+  }
+  
+  .texto-principal a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 2rem 4rem;
+    background-color: #ff0000;
+    transition: all 0.3s ease;
+  }
+  
+  .texto-principala:hover {
+    background-color: #ff4d4d;
+  }
+  
+  .nosotros {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    transition: transform 1s, opacity 1s;
+  }
+  
+  .nosotros h1 {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+  }
+  
+  .nosotros p {
+    color: #5f5f5f;
+    font-size: 1.4rem;
+    width: 25%;
+  }
+  
+  .list-section {
+    height: 25vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 12rem;
+    margin-bottom: 4.2rem;
+    transition: transform 1s, opacity 1s;
+  }
+  .list-section h1 {
+    position: absolute;
+    color: #e0e0e0;
+    font-size: 12rem;
+    top: -10rem;
+    z-index: -1;
+  }
+  
+  .list-section h2 {
+    text-transform: uppercase;
+    color: #414141;
+    margin-bottom: 1rem;
+  }
+  
+  .list-section p {
+    color: #5f5f5f;
+    font-size: 1.4rem;
+    width: 20rem;
+  }
+  
+   
+  
+  .galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+  
+
+  
+  
+  /* fotter */
+
+  .parte1-footer {
+    background-image: url("../img/footer-img.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-block: 6rem;
+    gap: 8rem;
+  }
+  
+  .footer-contacto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-contacto-title {
+    display: flex;
+  }
+  .footer-contacto-title h1 {
+    text-transform: uppercase;
+    color: #e0000c;
+  }
+  .footer-contacto-title h1:last-child {
+    color: white;
+  }
+  .footer-contacto p {
+    color: #aaaaaa;
+    font-size: 1.4rem;
+    margin-block: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer-bio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-icon {
+    font-size: 1.8rem;
+    color: #e0000c;
+    font-weight: bold;
+  }
+  
+  
+  .footer-blog {
+    color: #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-blog h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .footer-blog p:not(p:last-of-type) {
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .footer-blog p:not(p:last-of-type):hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+  
+  .footer-blog p:last-of-type {
+    position: relative;
+  }
+  .footer-blog p:last-of-type::after {
+    content: "";
+    height: 0.5px;
+    width: 100%;
+    background-color: #aaaaaa;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+  }
+  
+  .footer-blog p {
+    font-size: 1.2rem;
+  }
+  
+  .noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .noticias h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .noticias p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    line-height: 1.6;
+  }
+  
+
+  .parte-entrenadores-btn a,
+  .cifra-membresia button a,
+  .blog-footer button a,
+  .footer-form button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
